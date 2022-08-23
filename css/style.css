@@ -1,0 +1,93 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+#section {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#section .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #section .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#section .container .container-intern {
+  border: 4px solid green;
+  box-shadow: 20px 20px 20px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#section .container .container-intern {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#section .container button {
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  #section .container button {
+    padding: 2px 2px;
+  }
+}
+#section .container button:hover {
+  background-color: aqua;
+}
+#section .container .count {
+  display: flex;
+}
+@media (max-width: 768px) {
+  #section .container .count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+#section .container .count button {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+#section .count .box {
+  border: 2px solid red;
+  font-size: 4vh;
+  padding: 15px 15px;
+  height: 80%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #section .count .box {
+    margin-bottom: 20px;
+  }
+}
+#section .count .box:hover {
+  background-color: cadetblue;
+  cursor: pointer;
+}
+#section .container .btn {
+  margin: 10px;
+}
